@@ -69,7 +69,7 @@ const Reviews = () => {
         <div className="row justify-content-center">
           <div className="col-lg-10 col-md-11 col-12">
             <h2 className="text-center mb-5 fw-bold text-dark">What Our Clients Say</h2>
-            <div className="row g-4 overflow-hidden">
+            <div className="row g-4 overflow-hidden flex-nowrap">
               {visibleTestimonials.map((testimonial, index) => (
                 <div key={index} className="col-12 col-md-6 col-lg-4">
                   <div className="card shadow rounded-4 p-4 h-100">

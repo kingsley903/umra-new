@@ -11,7 +11,7 @@ import Frame10 from "./components/Frame10";
 import FAQSection from "./components/Frame11";
 import Frame12 from "./components/Frame12";
 import Footer from "./components/Frame13";
-import Reviews from "./components/Reviews";
+
 
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
     <div>
       <Header />
       <HeroSection />
-      <Reviews />
+   
       <Frame6 />
       <Frame7 />
       <Frame8 />

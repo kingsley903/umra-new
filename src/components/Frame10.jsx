@@ -1,34 +1,10 @@
 import React from "react";
-import { Carousel } from "react-bootstrap"; 
+import Reviews from "./Reviews";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const Frame10 = () => {
-  const testimonials = [
-    {
-      quote:
-        "UMRA represents a breakthrough in chronic disease management. The AI insights are remarkably accurate, and the platform's ability to monitor diverse patients across all demographics. This will revolutionize how we monitor patient health between visits.",
-      name: "Dr. Amara Okafor",
-      title: "Cardiologist, Lagos University Hospital",
-      avatar: "../icons/variant=55.png",
-      rate: "../icons/variant=13.png",
-    },
-    {
-      quote:
-        "As someone managing type 2 diabetes, UMRA has been life-changing. The real-time monitoring and AI advice have given me a level of confidence I've never had before. The interface is so intuitive and knowing PonceHealth is behind it gives me complete confidence in the platform.",
-      name: "Sarah Mwamgi",
-      title: "Business Analyst, Nairobi",
-      avatar: "../icons/variant=55.png",
-      rate: "../icons/variant=13.png",
-    },
-    {
-      quote:
-        "The potential of UMRA to address healthcare accessibility challenges in Africa is enormous. The technology is seamless, and the emphasis on a community of chronic disease management addresses one of our continent's most pressing health challenges. PonceHealth has created something truly special.",
-      name: "Prof. David Akinto",
-      title: "Public Health Researcher, Ghana",
-      avatar: "../icons/variant=55.png",
-      rate: "../icons/variant=13.png",
-    },
-  ];
+  
+ 
 
   return (
     <div
@@ -109,54 +85,8 @@ const Frame10 = () => {
       </div>
 
       {/* Testimonial Slideshow Section */}
-      <div className="container text-center py-5">
-        <h2 className="fw-bold mb-5">
-          What Healthcare Professionals & Users Say
-        </h2>
-        <Carousel indicators={true} controls={false} fade interval={3000}>
-          {testimonials.map((testimonial, index) => (
-            <Carousel.Item key={index}>
-              <div className="d-flex justify-content-center">
-                <div
-                  className="p-4 mx-2 rounded-3"
-                  style={{ backgroundColor: "#ffffff", maxWidth: "450px" }}
-                >
-                  <div className="col-lg-12 testimonial-img-box">
-                    <img src={testimonial.rate} />
-                    <img src={testimonial.rate} />
-                    <img src={testimonial.rate} />
-                    <img src={testimonial.rate} />
-                    <img src={testimonial.rate} />
-                  </div>
-                  <div className="col-lg-12 testimonial-img-box pt-4">
-                    <img src="../icons/variant=18.png" />
-                  </div>
-                  <p className="fst-italic text-secondary">
-                    <span className="fs-3 text-muted me-2">"</span>
-                    {testimonial.quote}
-                    <span className="fs-3 text-muted ms-2">"</span>
-                  </p>
-                  <div className="d-flex align-items-center justify-content-center mt-4">
-                    <img
-                      src={testimonial.avatar}
-                      alt={testimonial.name}
-                      className="rounded-circle me-3"
-                      width="60"
-                      height="60"
-                    />
-                    <div className="text-start">
-                      <h6 className="fw-bold mb-0">{testimonial.name}</h6>
-                      <p className="small text-muted mb-0">
-                        {testimonial.title}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Carousel.Item>
-          ))}
-        </Carousel>
-      </div>
+      <Reviews />
+   
 
       {/* Strategic Partnerships Section */}
       
