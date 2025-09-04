@@ -20,13 +20,13 @@ p {
   background: linear-gradient(270deg, rgb(106, 17, 203) 0%, rgb(37, 117, 252) 100%);
 }
 
- /*.slider-container {
-  max-width: 90%;
+ .slider-container {
+  max-width: 100%;
   margin: 40px auto;
   padding: 20px;
   background-color: #f9f9f9;
   border-radius: 10px;
-}*/
+}
 
 .testimonial-card {
   padding: 20px;
