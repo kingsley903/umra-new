@@ -125,4 +125,3 @@ const TestimonialSlider = () => {
 };
 
 export default TestimonialSlider;
-import React, { useState, useEffect } from "react";
