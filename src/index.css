@@ -26,9 +26,23 @@ p {
   padding: 20px;
   background-color: #f9f9f9;
   border-radius: 10px;
+
 }
 
+.slick-slide{
+  width: 570px !important;
+}
+
+.slick-list{
+  display: flex !important;
+  flex-wrap: nowrap;
+}
+.slick-track{
+  display: flex !important;
+  flex-wrap: nowrap;
+}
 .testimonial-card {
+  width: 300px !important;
   padding: 20px;
   margin: 0 10px; /* Adds space between the cards */
   background-color: #ffffff;
